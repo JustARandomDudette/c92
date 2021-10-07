@@ -1,0 +1,69 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+            #mathquiz-welcome {
+                background: #642B73;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                height: 600px;
+                width: 1300px;
+                font-size: 50px;
+                font-family: 'Roboto', sans-serif;
+                text-align: center;
+                color: white;
+            }
+            #img_math {
+                border-radius: 99%;
+                height: 200px;
+                width: 200px;
+            }
+            #math-quiz-welcome-2 {
+                border: purple;
+                border-radius: 93%;
+                font-family: 'Roboto', sans-serif;
+                font-size: 30px;
+                color:#642B73;
+                text-align: center;
+            }
+            #button-login {
+                background-color: purple;
+                color: white;
+                border-radius: 60%;
+                font-family: 'Roboto', sans-serif;
+                height: 100px;
+                width: 150px;
+                font-size: 19px;
+            }
+        </style>
+        <section id = "mathquiz-welcome">
+            <h1>Welcome to Mathmania!</h1>
+            <h3>Login Below</h3>
+            <img id = "img_math" src = "math.png">
+        </section>
+        <section id = "math-quiz-welcome-2">
+            <div class = "container" id = "div-player-1">
+                <h3>Player 1 | Information</h3>
+                <h4>User Name:</h4>
+                <input id = "text-player-1" type = "text" value = "Type Here">
+            </div>
+                <br>
+                <br>
+            <div class = "container" id = "div-player-2">
+                <h3>Player 2 | Information</h3>
+                <h4>User Name:</h4>
+                <input id = "text-player-2" type = "text" value = "Type Here">
+            </div>
+        </section>
+        <br>
+        <center>
+        <button id = "button-login" onclick = "addUser()">Login</button>
+        </center>
+        <script src="game_login.js">
+        </script>
+    </body>
+</html>

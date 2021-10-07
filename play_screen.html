@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <head>
+        <script src = "game_page.js"></script>
+    </head>
+    <body>
+        <h1>Math Quiz Game!</h1>
+        <h3>Question Turn - </h3>
+        <h3>Answer Turn - </h3>
+        <label id = "labelScorePlayer1"></label>
+        <label id = "labelScorePlayer2"></label>
+        <br>
+        <div id = "output">
+        <label></label>
+        </div>
+        <section id = "askAnswer">
+        <h1>Number 1 - </h1>
+        <input type = "text" id = "number1" placeholder = "Enter here.">
+        <br>
+        <h1>Number 2 - </h1>
+        <input type = "text" id = "number2" placeholder = "Enter here.">
+        <br>
+        <button id = "buttonsend" onclick = "functionSend()">Send</button>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+            body {
+                background-image: url("math.png");
+                background-position: center;
+                background-size: cover;
+                font-family: 'Roboto', sans-serif;
+                color: white;
+                text-align: center;
+                font-size: 36px;
+            }
+            #buttonsend {
+                background-color: purple;
+                color: white;
+                font-family: 'Roboto', sans-serif;
+                height: 200;
+                width: 250;
+            }
+            #output {
+                background-color: white;
+                color: black;
+            }
+        </style>
+
+    </body>
+</html>
